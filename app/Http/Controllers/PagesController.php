@@ -22,4 +22,12 @@ class PagesController extends Controller
         else
             return ('View not found');
     }
+
+    public function settings()
+    {
+        if (view::exists('pages.settings'))
+            return view('pages.settings');
+        else
+            return ('View not found');
+    }
 }

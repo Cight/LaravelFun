@@ -164,6 +164,12 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * IDE Helper
+         */
+
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        /*
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
@@ -176,6 +182,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * Custom Application Service Providers...
+         */
+        App\Providers\ComposerServiceProvider::class,
 
     ],
 

@@ -5,13 +5,13 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
 
-                    <h3>{{ $age }}</h3>
+                    <div class="panel-heading">Profile</div>
 
                     <div class="panel-body">
-                        You are logged in!
+                        {{ $married }}
                     </div>
+
                 </div>
             </div>
         </div>

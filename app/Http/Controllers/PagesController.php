@@ -14,4 +14,12 @@ class PagesController extends Controller
         else
             return ('View not found');
     }
+
+    public function profile()
+    {
+        if (view::exists('pages.profile'))
+            return view('pages.profile');
+        else
+            return ('View not found');
+    }
 }

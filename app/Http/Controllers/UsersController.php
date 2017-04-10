@@ -16,6 +16,7 @@ class UsersController extends Controller
 
     }
 
+    /*
     public function create()
     {
         return view('admin.users.create');
@@ -26,4 +27,5 @@ class UsersController extends Controller
         User::create($request->all());
         return 'Success!';
     }
+    */
 }

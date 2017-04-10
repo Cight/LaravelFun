@@ -6,39 +6,26 @@
 
 Route::get('/', 'PagesController@index');
 
-Route::get('profile', 'PagesController@profile');
-
-Route::get('settings', 'PagesController@settings');
-
 
 /*
  * Home
  */
 
-Route::get('/home', 'HomeController@index');
-
-
-/*
- * Blade
- */
-Route::get('blade', 'BladeController@blade');
-
+Route::get('/loginSuccess', 'HomeController@index');
 
 /*
- * Users
+ * Authenticated Routes
  */
 
-Route::get('users', 'UsersController@index')->middleware('authenticated');
+Route::group(['middleware' => 'authenticated'], function () {
 
-/* Create */
-Route::get('users/create', 'UsersController@create');
+    Route::get('users', 'UsersController@index');
 
-/* Store */
-Route::post('users', 'UsersController@store');
+    Route::get('profile', 'PagesController@profile');
 
+    Route::get('settings', 'PagesController@settings');
+});
 
-/*
- * Auth
- */
+/* Authenticate the Routes */
 
 Auth::routes();

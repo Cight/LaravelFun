@@ -7,8 +7,6 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Dashboard</div>
 
-                    <h3>{{ $age }}</h3>
-
                     <div class="panel-body">
                         You are logged in!
                     </div>

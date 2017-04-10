@@ -10,9 +10,6 @@
 
     <title>{{ config('app.name', 'Franky') }}</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -47,7 +44,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;
+                    <li><a href="{{ url('users') }}">User List</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

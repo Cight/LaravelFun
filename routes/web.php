@@ -28,7 +28,7 @@ Route::get('blade', 'BladeController@blade');
  * Users
  */
 
-Route::get('users', 'UsersController@index');
+Route::get('users', 'UsersController@index')->middleware('authenticated');
 
 /* Create */
 Route::get('users/create', 'UsersController@create');
